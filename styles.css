@@ -7,10 +7,10 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: #007074;
   color: #ffffff;
   padding: 20px;
+  line-height: 1.6;
 }
 
 /* Header */
@@ -18,49 +18,54 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .header h1 {
   color: #F38C79;
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .profile-img {
   border-radius: 50%;
   border: 3px solid #FFC1B4;
-  width: 25vw;
-  max-width: 150px;
-  min-width: 100px;
-  height: auto;
+  width: 8rem;
+  height: 8rem;
   object-fit: cover;
 }
 
-/* Section Containers */
+/* Sections */
 section {
   margin-bottom: 40px;
 }
 
-h2, h3, h1 {
+h1, h2, h3 {
   color: #F38C79;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-/* List Styling */
+p {
+  margin-bottom: 12px;
+}
+
 ul {
   list-style: disc inside;
   padding-left: 10px;
 }
 
 li {
-  margin-bottom: 10px;
   color: #FFC1B4;
+  margin-bottom: 8px;
 }
 
-p {
-  margin: 10px 0;
+/* Projects and Summary paragraphs */
+.projects p,
+.summary p,
+.education p,
+.skills p {
+  color: #ffffff;
 }
 
 /* Contact Section */
@@ -89,32 +94,40 @@ p {
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #fff;
-  color: #ccc;
+  border-top: 1px solid #ffffff80;
   font-size: 0.9rem;
+  color: #ccc;
 }
 
-/* Responsive Typography */
+/* Horizontal Rule */
+hr {
+  border: 1px solid #ffffff30;
+  margin: 30px 0;
+}
+
+/* Responsive Image Sizes */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2rem;
+  .profile-img {
+    width: 6.5rem;
+    height: 6.5rem;
   }
 
-  .profile-img {
-    width: 35vw;
+  .header h1 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 10px;
+  .profile-img {
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   .header h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
-  .profile-img {
-    width: 40vw;
+  body {
+    padding: 10px;
   }
 }
