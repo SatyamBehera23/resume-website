@@ -81,12 +81,14 @@ li {
 }
 
 .contct-me img {
-  height: 40px;
+  height: 32px;
+  width: 32px;
+  margin: 0 10px;
   transition: transform 0.3s ease;
 }
 
 .contct-me img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /* Footer */
@@ -105,7 +107,7 @@ hr {
   margin: 30px 0;
 }
 
-/* Responsive Image Sizes */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .profile-img {
     width: 6.5rem;
@@ -125,6 +127,11 @@ hr {
 
   .header h1 {
     font-size: 1.6rem;
+  }
+
+  .contct-me img {
+    height: 26px;
+    width: 26px;
   }
 
   body {
